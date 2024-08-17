@@ -1,0 +1,89 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-600: hsl(0, 0%, 28%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.inter200 {
+  font-variation-settings: 'wght' 200;
+}
+
+.inter600 {
+  font-variation-settings: 'wght' 600;
+}
+
+body {
+  font-family: Inter;
+  background-color: var(--grey-800);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
+main {
+  background-color: var(--grey-700);
+  border-radius: 0.75rem;
+  margin: auto;
+  padding: 1.5rem;
+
+  @media screen and (min-width: 378px) {
+    width: 30%;
+  }
+}
+
+img {
+  border-radius: 6rem;
+  margin: auto auto 1.75rem auto;
+  width: 6em;
+}
+
+h2 {
+  letter-spacing: 0.05rem;
+}
+
+h5 {
+  color: var(--green);
+  letter-spacing: 0.05rem;
+}
+
+p.inter200 {
+  margin: 1.5rem auto;
+}
+
+section {
+  margin: 1rem;
+
+  a {
+    text-decoration: none;
+
+    >p {
+      background-color: var(--grey-600);
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+    }
+
+    p:hover {
+      background-color: var(--green);
+      color: black;
+    }
+  }
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
